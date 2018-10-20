@@ -1,2 +1,42 @@
 REVIEW DELPHI TERBARU 
+
+Tips Optimasi agar loading IDE delphi lebih cepat, ringan dan nyaman dipakai
+Salah satu yang membuat kita “kerasan” menggunakan delphi karena didukung beragam paket VCL (komponen) bawaan maupun tambahan yang dibuat oleh pihak ketiga.
+
+Saat ini ada ratusan bahkan ribuan komponen bagus yang dibuat untuk delphi baik yang gratis maupun berbayar.
+
+Semakin hari semakin banyak saja komponen bagus yang membuat kita “ngiler” untuk memasang di delphi kita.
+
+Dengan semakin banyak komponen yang kita pasang konsekuensinya lambat laun akan membuat loading delphi menjadi berat karena membutuhkan lebih banyak resource.
+
+Untuk meringgankan beban delphi, salah satu jalan yang kita tempuh adalah dengan mengurangi sebagian paket komponen, diinstall sebagian aja yang saat ini dibutuhkan.
+
+Namun cara ini agak merepotkan bila mana kita sedang mengerjakan banyak proyek yang menggunakan macam2 komponen berbeda.
+
+Saat mengerjakan proyek A, install paket A,B,C.
+Saat mengerjakan proyek B, install paket A,B,E,F.
+Saat mengerjakan proyek C, install pake layout model lama.
+
+Ada solusi untuk masalah diatas yaitu memanggil IDE delphi dengan menggunakan konfigurasi yang berbeda (kita bisa membuat 2 atau lebih shortcut untuk ini).
+
+Caranya kita copy shortcut yang ada menjadi beberapa sesuai kebutuhan lalu kita edit parameternya.
+
+misalnya ..
+Shortcut asli pada Delphi XE
+
+“C:\Program Files\Embarcadero\RAD Studio\8.0\bin\bds.exe” -pDelphi
+
+kita buat beberapa shortcut misalnya ..
+
+“C:\Program Files\Embarcadero\RAD Studio\8.0\bin\bds.exe” -pDelphi -rPaketA
+“C:\Program Files\Embarcadero\RAD Studio\8.0\bin\bds.exe” -pDelphi -rPaketB
+“C:\Program Files\Embarcadero\RAD Studio\8.0\bin\bds.exe” -pDelphi -rPaketC
+
+selanjutnya kita panggil masing2 shortcut dan lakukan kustomisasi, misalnya paket apa aja yg diinstall, layoutnya gimana dan setting lainnya.
+
+Dengan membuat berberapa konfigurasi seperti diatas maka loading IDE delphi akan lebih cepat dan ringan karena tidak semua paket dimuat ke memory dan kita tidak perlu bolak/balik bongkar pasang paket.
+
+
+
+sumber :
 http://virgonia.id1945.com/2013/03/tips-optimasi-agar-loading-ide-delphi-lebih-cepat-ringan-dan-nyaman-dipakai/
